@@ -3139,4 +3139,31 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
-	}
+			.contact-form {
+				margin-top: 50px;
+				margin-bottom: 100px;
+				padding-top: 50px;
+				border-top: 1px solid #dce4e6;
+			}
+
+			.contact-form h3 {
+				margin: 0 0 40px 0;
+			}
+
+			.contact-form .widget-inner {
+				margin-top: 40px;
+			}
+
+			.contact-form #email, .contact-form #name, .contact-form #subject, .contact-form textarea {
+				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+			}
+
+			.contact-form input.mainBtn {
+				width: auto;
+			}
+
+			.contact-form textarea {
+				min-height: 160px;
+			}
