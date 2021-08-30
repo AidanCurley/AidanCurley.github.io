@@ -67,12 +67,8 @@
 								<header>
 									<h3>Reflecting on UML class diagrams</h3>
 								</header>
-								<strong><p>Create an object model to represent a supermarket, for example, you might like to consider the some but exclusively all of the following:</p>
-                                <p>Staff</p>
-                                <p>Products</p>
-                                <p>Customers</p>
-                                <p>Online orders</p>
-                                <p>Loyalty schemes</p>
+								<strong><p>TASK: Create an object model to represent a supermarket, for example, you might like to consider the some but exclusively all of the following:</p>
+                                <p>Staff, Products, Customers, Online orders, Loyalty schemes</p>
                                 <p>Consider how you might represent inheritance within your model and where you might use composition.</p></strong>
 
                                 <p>This was only my second ever attempt at a UML class diagram, and by far the most invloved.
@@ -80,6 +76,14 @@
                                 I am sure that if I had to implement this, my finished product would be very different to the diagram as I discovered
                                 different things I needed a class to do, or different attributes I needed it to have.
                                 </p>
+
+                                <p><strong>Difficulties</strong></p>
+                                <p>The main diffficulty I uncovered was trying to deal with people who are both staff members and customers.
+                                I think this highlights some shortcomings in my current approach. I initially wanted Person to be an interface that was implemented by both
+                                the Staff and Customer classes. This means that a "real life person" would be instantiated from either the Customer or the Staff class, and
+                                so, if a staff member wanted to buy soemthing, there would be two different objects for the same person.</p>
+                                <p> I remember there being an example of how to get around this issue in our reading for this week. I will have to go back and take another
+                                look at it, and will produce a second iteration of this diagram after some feedback and some more consideration.</p>
 							</section>
 						</article>
 						<hr />
