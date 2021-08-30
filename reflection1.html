@@ -81,11 +81,13 @@
 
                                 <p><strong>Difficulties</strong></p>
                                 <p>The main diffficulty I encountered was trying to deal with people who are both staff members and customers.
-                                I think this really highlighted some shortcomings in my current approach. I initially wanted Person to be an interface that was implemented by both
-                                the Staff and Customer classes. This means that a "real life person" would be instantiated from either the Customer or the Staff class, and
+                                I think this really highlighted some shortcomings in my initial approach. I wanted Person to be an interface that was implemented by both
+                                the Staff and Customer classes. This meant that a "real life person" would be instantiated from either the Customer or the Staff class, and
                                 so, if a staff member wanted to buy soemthing, there would be two different objects for the same person.</p>
-                                <p> I remember there being an example of how to get around this issue in our reading for this week. I will have to go back and take another
-                                look at it, and will produce a second iteration of this diagram after some feedback and some more consideration.</p>
+                                <p> In the end, I think I got around this successfully, by reversing the direction of the arrows between Customer, Staff and Person. In this
+                                revised design, Custome and Staff became interfaces that are implemented by Person. That means that a person can be both a customer and a
+                                member without being represented by two different objects.
+                                </p>
 							</section>
 						</article>
 						<hr />
