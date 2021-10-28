@@ -7,6 +7,7 @@ class Contact {
     }
 }
 
+
 const fields = {name, subject, email, message};
 document.addEventListener("DOMContentLoaded", function() {
     fields.name = document.getElementById('name');
