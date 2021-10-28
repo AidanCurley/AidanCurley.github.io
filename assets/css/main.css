@@ -3167,5 +3167,5 @@ input, select, textarea {
 
 				.contact-form textarea {
 					min-height: 160px;
-					min-width: 50%;
+					min-width: 100%;
 				}
