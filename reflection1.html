@@ -102,20 +102,42 @@
 									for a patient to request a repeat prescription be raised. Receptionists are able to cancel appointments as well as create them. A doctor at the
 									clinic may have a maximum of 500 patients registered to them at any one time.
 								</p>
-                                <p>We had to create three diagrams:
+                                <p>I had to create three diagrams:
 									<br><strong>1. </strong>A class diagram for the system.
 									<br><strong>2. </strong>A sequence diagram for booking an appointment.
 									<br><strong>3. </strong>An activity diagram for a receptionist booking an appointment.
 								</p>
-								<p>Here is my attempt. I have included each of the diagrams and a short description of my thought process when designing them.
+								<p>Here is my attempt. I have included each of the diagrams and a short description of my thought process during their design.
 								</p>
                                 <img src="images/Appointment Booking Class Diagram.png" alt="Creating an Appointment class diagram"width=100% height=auto>
 								<img src="images/Appointment Booking Sequence Diagram.png" alt="Creating an Appointment class diagram"width=100% height=auto>
 								<img src="images/Receptionist Booking Appointment Activity Diagram.png" alt="Creating an Appointment class diagram"width=100% height=auto>
 
-                                <p><strong>Difficulties</strong></p>
-                                <p>The </p>
-                                <p> In </p>
+                                <p><strong>Class Diagram</strong></p>
+								<p>I started the class diagram by making a class for each of the people in the task description: receptionist, patient and doctor. Then, I added the other
+								concrete nouns: appointment, prescription and consultation, drawing the lines indicating the interaction between the classes. Adding the attributes for
+								each class was not too difficult as it seemed obvious which items of information needed to be stored on which class.</p>
+								<p>The most challenging part was adding the methods. An important consideration is separation of concerns, which I did not take into account. Implementation
+								of OO principles should ensure that the methods which modify attributes of a class are contained within that class. That means that, for example, any other
+								object can update the details of an appointment, by calling the appointment.update_details() method. In my attempt above, the Receptionist class had an
+								update_appointment() method. The problems with this are twofold: (1) should the Appointment class be modified, modifcation will also need to be made to this
+								method in the Receptionist class. (2) should we wish to modify the functionality and allow a Doctor to make an appointment too, we would have to duplicate the
+								code from the Receptionist's method. This violates the DRY principle and makes the code much more difficult to maintain effectively.
+								</p>
+                                <p><strong>Sequence Diagram</strong></p>
+								<p>The challenging part of the sequence diagram was trying to depict all of the communication between objects. I discovered afterwards that it is oftten not
+								deemed necessary to show the returned details(actions which I had used dashed lines for) in an effort to keep the diagram clutter-free. One of the benefits of
+								completing this diagram was it allowed me to more clearly see the communication between objects in the system, and led to me returning to the class diagram to
+								modify many of the methods.
+								</p>
+                                <p><strong>Activity Diagram</strong></p>
+								<p>This was definitely the most conceptually straightforward of the three diagrams as it is very similar to a flow chart, which I am already familiar with.
+								One of the important design factors that I discovered when reading about this type of diagram is that to ensure that it is comprehensible at a glance, we
+								should aim to keep the "Yes" and "No" exits from a decision flowing in a consistent direction.
+								</p>
+								<p>One of the immediate differences between this and a normal flow chart is the ability to have simultaneous of parallel actions. This is acheived by arriving
+								at a perpendicular bar with multiple actions flowing in parallel from it, though there was no need to include any in this particular example.
+								</p>
 							</section>
 						</article>
 						<hr />
