@@ -52,9 +52,9 @@ function isValid() {
 
 function sendContact() {
     if (isValid()) {
-        let contact = new Contact(name.value, subject.value, email.value, message.value);
+        let contact = new Contact(fields.name.value, fields.subject.value, fields.email.value, fields.message.value);
 
         alert(`${contact.name}, thanks for getting in touch.`);
-        console.log(contact.message);
+        console.log(`Messsage: ${contact.message}`);
     }
 }
