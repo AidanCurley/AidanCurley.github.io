@@ -55,6 +55,5 @@ function sendContact() {
         let contact = new Contact(fields.name.value, fields.subject.value, fields.email.value, fields.message.value);
 
         alert(`${contact.name}, thanks for getting in touch.`);
-        console.log(`Messsage: ${contact.message}`);
     }
 }

@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alternatives to SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel = "icon" href ="images/shamrock.ico" type = "image/x-icon">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+<!-- Header -->
+				<div id="header">
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1>Reflections: Alternatives to SQL</h1>
+							</header>
+						</div>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="coursemodules.html">Course Modules</a>
+                            <ul>
+                                <li><a href="launch-module.html">Launching into CS</a></li>
+                                <li><a href="object-oriented-module.html">Object-Oriented Systems</a></li>
+                                <li><a href="module2.html">Secure Software Development</a></li>
+                                <li><a href="module4.html">Network Security</a></li>
+                                <li><a href="module5.html">Project Management</a></li>
+                                <li><a href="module6.html">Research Methods</a></li>
+                                <li><a href="module7.html">MSc Project</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="projects.html">Projects</a>
+							<ul>
+								<li><a href="etchasketch.html">Etch-a-Sketch</a></li>
+								<li><a href="marketplace.html">Marketplace</a></li>
+								<li><a href="project3.html">Project 3</a></li>
+							</ul>
+						</li>
+                        <li><a href="reflections.html">Reflections</a>
+                            <ul>
+                                    <li><a href="reflections.html">All Reflections</a></li>
+                                    <li><a href="reflection2.html">Latest Reflection</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+
+                </div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<section>
+								<header>
+									<h3>NoSQL databases: Document Stores</h3>
+								</header>
+                                <p>The use of non-relational databases, commonly referred to as NoSQL databases, emerged in the mid 1990s
+                                    with the advent of the internet and the subsequent proliferation of non-homogeneous data (Foote, 2018).
+                                </p>
+                                <p>One type of NoSQL database is a document store, sometimes called a document-oriented database. Document
+                                    stores are designed for the storage of semi-structured data, giving them the ability to store many types
+                                    of data, including arrays and objects, in a single document.
+                                </p>
+
+                                <p>An individual record on the database is stored as a document, often kept in the human readable JSON format.
+                                    This contains all of the information for that item in the same place, rather than being spread across
+                                    multiple tables. Similar documents are kept together in a collection, which can be regarded as similar
+                                    in function to the table of a relational database. Many collections together make a database (MongoDB, N.D.).
+                                </p>
+                                <p>There are many stated advantages to using a document-oriented database over a relational database. Firstly,
+                                    as the data in document-oriented databases is stored in JSON documents using key-value pairs, it maps more
+                                    readily to the kind of data structures used by developers, decreasing development complexity. Additionally,
+                                    a document may contain different fields to other documents in the collection. The lack of a structured table
+                                    with a defined number of fields increases its ability to deal with non-regular, non-structured data. A further
+                                    advantage of NoSQL databases is that normalization of the data, and hence the use of JOINS needed to build
+                                    relationships between data spread across tables, is not required (Foote, 2016).
+                                </p>
+                                <p>In addition to superior flexibility and agility, document stores have also been found to be more efficient
+                                    than traditional SQL databases in performing simple repeated CRUD operations on the data. One such study
+                                    comparing three popular SQL databases and three NoSQL databases found that the NoSQL database MongoDB was
+                                    the fastest when it came to retrieving data from the database. Truica et. al (2018: 5) states that
+                                    <strong>“overall, the NoSQL databases perform better than the relational ones”</strong>. A similar study
+                                    by Reetishwaree and  Hurbungs found MongoDB to be more performant when writing to the database, but that
+                                    relational databases enjoyed a time advantage when only reading from the database (Reetishwaree and
+                                    V. Hurbungs, 2020).
+                                </p>
+                                <p>In conclusion, it seems that as the data we gather and process diversifies, the need for non-relational
+                                   databases and the advantages they have when dealing with non-homogeneous data will only continue to increase.
+                                </p>
+							</section>
+							<section>
+								<header>
+									<h3>References</h3>
+								</header>
+                                <p>Foote, K. D. (2016) A Review of Different Database Types: Relational versus Non-Relational. Available from:
+                                    http://www.dataversity.net/review-pros-cons-different-databases-relational-versus-non-relational/ [Accessed 23 October 2021]
+                                </p>
+								<p>Foote, K .D. (2018) A Brief History of Non-Relational Databases. Available from:
+                                    https://www.dataversity.net/a-brief-history-of-non-relational-databases/ [Accessed 23 October 2021]
+								</p>
+                                <p>MongoDB (N.D.) “What is a document database?” Available from: https://www.mongodb.com/document-databases [Accessed 23 October 2021]
+								</p>
+								<p>Reetishwaree, S. & Hurbungs, V. (2020) Evaluating the performance of SQL and NoSQL databases in an IoT environment.
+                                    2020 3rd International Conference on Emerging Trends in Electrical, Electronic and Communications Engineering
+                                    (ELECOM), pp. 229-234, doi: 10.1109/ELECOM49001.2020.9297028.
+								</p>
+								<p>Truica, C., Radulescu, F., Boicea, A. & Bucur, I. (2015)  Performance Evaluation for CRUD Operations in Asynchronously
+                                    Replicated Document Oriented Database. 2015 20th International Conference on Control Systems and Computer Science,
+                                    pp. 191-196, doi: 10.1109/CSCS.2015.32.
+                                </p>
+							</section>
+						</article>
+						<hr />
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/etchasketch-small.jpg" alt="" /></a>
+								<header>
+									<h3><a href="etchasketch.html">Personal Project 1</a></h3>
+								</header>
+								<p>
+									Etch-a-Sketch: A single page web application written in HTML, CSS and Javascript.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="marketplace.html" class="image featured"><img src="images/marketplace-small.png" alt="" /></a>
+								<header>
+									<h3><a href="marketplace.html">Marketplace</a></h3>
+								</header>
+								<p>
+									Marketplace: An e-commerce web application written in Python using the Flask framework.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="project3.html" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+								<header>
+									<h3><a href="project3.html">Project 3</a></h3>
+								</header>
+								<p>
+									More details...
+								</p>
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Contact -->
+								<section class="contact">
+
+
+									<p>Profiles</p>
+									<ul class="icons">
+										<li><a href="https://www.instagram.com/rampage_the_parrotlet/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/AidanCurley" class="icon brands fa fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.linkedin.com/in/aidan-c-2359a1203/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+									</ul>
+								</section>
+
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; <a href="https://github.com/AidanCurley">Aidan Curley</a> 2021. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
