@@ -65,47 +65,79 @@
 								<header>
 									<h3>Object-Oriented Information Systems</h3>
 								</header>
-                                <p>The module focussed on the use of object-oriented design and implementation in information systems. We
-                                covered system failures, and the reasons for their occurrences, system design using UML diagrams, and
-                                object-oriented programming principles, such as inheritance, polymorphism, encapsulation, while using
-                                Python for their implementation.
+                                <p>The module focussed on the use of object-oriented design and implementation in information systems. We covered
+                                    system failures, and the reasons for their occurrences, system design using UML diagrams, and object-oriented
+                                    programming principles, such as inheritance, polymorphism, encapsulation, while using Python for their
+                                    implementation.
                                 </p><strong>The importance of testing</strong>
                                 <p>My first takeaway from the initial discussions around system failure concerned the importance of testing.
-                                Though many of the specific incidences discussed by my peers on the forum were the result of hackers, malware,
-                                or malicious use, in general, a number of the incidences involved database and software failure which was
-                                preventable with better design. Comprehensive testing of applications, including unit testing, functional
-                                testing, integration testing can help identify potential weaknesses in the system and prevent loss of service
-                                and the financial cost of such incidents.
-                                </p>
+                                    Though many of the specific incidents discussed by my peers on the forum were the result of malicious use,
+                                    a number of the incidents involved database and software failure which could have been prevented with better
+                                    design. Comprehensive testing of applications, including unit testing, functional testing, integration
+                                    testing can help identify potential weaknesses in the system and prevent loss of service and the financial
+                                    cost of such incidents.
                                 </p><strong>UML Diagrams and Design</strong>
                                 <p>Though I had seen class diagrams and entity relationship diagrams before this module, this was still a steep
-                                learning curve for me. I found the lucidchart software reasonably user-friendly and got to grips with the different
-                                styles of diagram pretty quickly. I found the sequence diagrams particularly useful as they forced me to look
-                                at the processes and flows that were needed in the software, and also helped me to identify the communication
-                                lines required between the different objects.
+                                    learning curve for me. I found the lucidchart software reasonably user-friendly and got to grips with the
+                                    different styles of diagram pretty quickly. I found the sequence diagrams particularly useful as they forced
+                                    me to look at the processes and flows that were needed in the software, and also helped me to identify the
+                                    communication lines required between the different objects.
                                 </p>
-                                <p>I found it particularly challenging to come up with comprehensive, detailed and accurate class diagrams
-                                when given a set of requirements. They are pretty useful for providing an overview of the structure of an existing
-                                OO system, and outside of this module, in my professional life, I find detailed class diagrams very informative,
-                                and a great way to get to grips with the architecture and make-up of an already existing system. However, I
-                                am unconvinced of their use as a detailed planning tool for systems that have yet to be implemented. For example,
-                                in my final project for this module, my implementation differs significantly from my initial blueprints. Planning
-                                a system in its entirety before writing a single line of code (the waterfall methodology) did not seem to benefit
-                                my project proportionally to the work involved. Getting accurate blueprints of a system would require a lot more
-                                communication and clarification with the stakeholders than just an initial brief of written requirements.
-                                I currently work in an agile development environment where building a minimum viable product and then iterating on
-                                it, with consistent repeated feedback from the product team, is the norm. Now, having tried the waterfall method, I
-                                appreciate more why most software teams these days are moving to a more agile development framework.
+                                <p>I found it particularly challenging to come up with comprehensive, detailed and accurate class diagrams when
+                                    given a set of requirements. They are pretty useful for providing an overview of the structure of an existing
+                                    object-oriented system, and outside of this module, in my professional life, I find detailed class diagrams
+                                    very informative, and a great way to get to grips with the architecture and make-up of an already existing
+                                    system. However, I am unconvinced of their use as a detailed planning tool for systems that have yet to be
+                                    implemented. For example, in my final project for this module, my implementation differs significantly from
+                                    my initial blueprints. Planning a system in its entirety before writing a single line of code (the waterfall
+                                    methodology) did not seem to benefit my project proportionally to the work involved. Getting accurate blueprints
+                                    of a system would require a lot more communication and clarification with the stakeholders than just an initial
+                                    brief of written requirements.
                                 </p>
-                                <p>Having said that, drawing an initial high-level less detailed diagram, then building it, then revisiting the
-                                diagram and filling in the details, seems to me to be a productive way of using UML diagrams.
+                                <p>I currently work in an agile development environment where building a minimum viable product and then iterating
+                                    on it, with consistent repeated feedback from the product team, is the norm. Now, having tried the waterfall
+                                    method, I appreciate more why most software teams these days are moving to a more agile development framework.
+                                </p>
+                                <p>Having said that, drawing an initial high-level less detailed diagram before implementation, then revisiting
+                                    the diagram and filling in the details so future developers can get an overview of the project, seems to me
+                                    to be a productive way of using UML diagrams.
                                 </p><strong>Implementing OOP in Python</strong>
-                                <p>In
+                                <p>I had some foundational knowledge of Python before the start of this module. I had also done a couple of courses
+                                    in Object-Oriented Programming using Java, but I had not really looked into using Python strictly as an
+                                    object-oriented language. I found the implementation of the classes pretty straightforward but Python, without
+                                    using external libraries, lacks some of the important components of the OOP paradigm, like interfaces for example,
+                                    which allow for loosely coupled code and reduced dependencies. This led to some initial confusion on my part
+                                    about how I was to implement my design. Python does, however, allow multiple inheritance which effectively lessens
+                                    the need for interfaces. This did lead to my implementation diverging from my design at the very early stages.
                                 </p>
-                                <p>
-
-                                </p><strong>Test-Driven Devlopment</strong>
-                                <p></p>
+                                <p>This was only my second time using the Flask framework, and I found that when I was unsure of how to do something,
+                                    I could get most of what I needed from the documentation. This was a good confidence boost for me, because when
+                                    I started coding in April 2020, most documentation seemed impenetrably dense, and I generally ended up watching
+                                    videos on Youtube to get a hold on new concepts. Going forwards, I will definitely be less reluctant to search
+                                    in the documentation for what I need.
+                                </p><strong>Test-Driven Development</strong>
+                                <p>The most important lesson I learnt from the development of the project was the effectiveness of test-driven
+                                    development.  I decided to experiment with TDD for this project as I had never used this approach before. Writing
+                                    the unit tests for my classes before implementing them was a real reversal of how I had previously developed.
+                                    The idea behind TDD  is that, first, you write a suite of tests which test for the desired behaviour of your
+                                    classes BEFORE writing any of the classes themselves. I found that this really helped me be specific about what
+                                    I expected the class and its methods to be able to do. After I had a set of tests, I could then code the class
+                                    and its methods gaining immediate feedback on the accuracy of my code, just by running the tests.
+                                </p>
+                                <p>There were, of course, a couple of issues with this approach, as a test will only check what you are asking it to
+                                    do, so in a couple of cases my tests didn't cover edge cases effectively and I still ended up debugging issues
+                                    when running the code.
+                                </p><strong>Security</strong>
+                                <p>One of the aspects of software design and implementation I realise that I need to work on is security. The web
+                                    application I coded had a number of security flaws, and was particularly susceptible to attack by SQL injection.
+                                    From the sign-in page, it was possible to gain access directly into my database by entering the string <strong>
+                                    '' OR 1=1 --</strong>. There are not only issues with my implementation, but also with the design. Application
+                                    security is something that needs to be considered in the design phase, as well as by the coder implementing the design.
+                                </p>
+                                <p>As a result of this, I intend to spend some time learning how to avoid or prevent SQL injection attacks using
+                                    Python.  For a small university project like this, it was not a major issue, but in real life professional
+                                    development situations, the  security of your database and code base is of the utmost importance.
+                                </p>
 							</section>
 						</article>
 						<hr />
