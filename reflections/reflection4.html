@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Object-Oriented Information Systems</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel = "icon" href="../images/shamrock.ico" type = "image/x-icon">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+<!-- Header -->
+			<div id="header">
+				<!-- Inner -->
+				<div class="inner">
+					<header>
+						<h1>Software Engineering Project Management: Estimation Techniques Reflection</h1>
+					</header>
+				</div>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../module pages/coursemodules.html">Course Modules</a>
+                            <ul>
+                                <li><a href="../module pages/launch-module.html">Launching into CS</a></li>
+                                <li><a href="../module pages/object-oriented-module.html">Object-Oriented Systems</a></li>
+                                <li><a href="../module pages/network-security.html">Network Security</a></li>
+                                <li><a href="../module pages/software-project-management.html">Software Engineering Project Management</a></li>
+                                <li><a href="../module pages/module2.html">Secure Software Development</a></li>
+                                <li><a href="../module pages/module6.html">Research Methods</a></li>
+                                <li><a href="../module pages/module7.html">MSc Project</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../projects/projects.html">Projects</a>
+							<ul>
+								<li><a href="../projects/etchasketch.html">Etch-a-Sketch</a></li>
+								<li><a href="../projects/marketplace.html">Marketplace</a></li>
+							</ul>
+						</li>
+                        <li><a href="../reflections/reflections.html">Reflections</a>
+                            <ul>
+                                <li><a href="../reflections/reflections.html">All Reflections</a></li>
+                                <li><a href="../reflections/reflection4.html">Latest Reflection</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+					<div class="container">
+						<article id="main" class="special">
+							<section>
+								<header>
+									<h3>Development Cost Estimation Techniques</h3>
+								</header>
+								<h4>Background</h4>
+								<p>Techniques used to estimate the delivery cost (in man hours) of a software project can be split into two broad groups,
+									<strong>algorithmic techniques</strong> and <strong>non-algorithmic techniques</strong>.
+								<h5>Algorithmic Techniques</h5>
+								<p>Traditional algorithmic estimation techniques were developed in the 1970s and 80s and widely employed in
+									large software projects. They involved formulaic calculations based upon the size of the code required
+									to complete the project, or the number and complexity of features to be included in the project.
+								</p>
+                                <p><strong>COCOMO (constructive cost model)</strong> is a formerly widely used technique developed by Barry
+								Boehm in the late 1970s. It is based upon the size of the project in lines of code, to which an algorithm is
+								applied in order to calculate the number of man-months required to complete the proposed project. The
+								parameters of the algorithm include a measurement of the experience of the development team, the type of
+								hardware being used and the complexity of the project requirements.
+                                </p>
+								<p><strong>Function Points</strong> is another estimation technique designed in the late 1970s. Rather than
+								counting lines of code, calculations are made using the number of screens, reports, queries, files, database
+								tables and objects. Like the COCOMO technique, the function points calculations use historical data to supply
+								some of the parameters. The calculation is more complex and involved than the COCOMO formula, and results were
+								deemed to be more accurate, though a correlation was found between the number of lines of code and the number of
+								function points, questioning the validity of this technique.
+                                </p>
+                                <p><strong>My thoughts</strong>
+                                <p>It is extremely difficult to effectively apply traditional algorithmic cost estimation methods to agile
+									software development as both techniques require a full and detailed planning of the scope of the project,
+									while agile methodologies are based on multiple iterations of refining changing requirements followed by
+									sprints of software development.
+								</p>
+								<h4>Non-Algorithmic Techniques</h4>
+                                <p>There are a number of non-algorithmic estimation techniques which make use of the expertise of the team
+									members and their previous experience.These can be broadly termed ‘expert judgement’ techniques. Some,
+									like <strong>Wideband Delphi</strong> rely on the input of the entire team, developers, product managers,
+									content creators and others. Each is asked to estimate the development cost of a function or feature of
+									the application, and discussions take place until a broad consensus is reached. There have been some attempts
+									to formalise this process including the under the banner of Planning Poker.
+								<p>Other expert judgement techniques involve  estimations agreed upon by a selected group of ‘experts’. This
+								kind of estimation is more widely used these days as they are considered more flexible and do not require the
+								detailed plan of the waterfall software development lifecycle.
+                                </p>
+
+								<h4>Our Method of Estimation</h4>
+								<p>We thought it was obvious that the historically-used algorithmic techniques were obsolete and so decided to
+									make use of one of the ‘expert judgement’ methods. The issue with this approach was that only two members of
+									our team had previously worked on a professional software project, so we were distinctly lacking in expertise.
+									This led to our initial estimations at the projects inception being nothing more that uninformed guesses.
+								<p>However, for the final assignment we had to predict the future development cost for the remaining stories and epics.
+								At this stage, we had completed after  two development sprints, giving us some historical data to base our estimations
+								upon. We also narrowed our group of ‘experts’ to only include the Project Manager and the two members of the development
+								team who had worked on the codebase. We believe that this makes our estimates likely to be more accurate.
+								<p>On a personal level, I was wondering how this is done at my work. I mean, I know that our development team estimates
+								upcoming work by discussing its complexity and comparing it to previously completed work. We then discuss any potential
+								risks to the timeframe, such as upcoming annual leave, reliance on outside parties, etc. However, no official calculations
+								are carried out by the development team. I wonder if this takes place higher up the management ladder.
+
+							</section>
+						</article>
+						<hr />
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<a href="../projects/etchasketch.html" class="image featured"><img src="../images/etchasketch-small.jpg" alt="" /></a>
+								<header>
+									<h3><a href="../projects/etchasketch.html">Etch-A-Sketch</a></h3>
+								</header>
+								<p>
+									Etch-a-Sketch: A single page web application written in HTML, CSS and Javascript.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="../projects/marketplace.html" class="image featured"><img src="../images/marketplace-small.png" alt="" /></a>
+								<header>
+									<h3><a href="../projects/marketplace.html">Marketplace</a></h3>
+								</header>
+								<p>
+									Marketplace: An e-commerce web application written in Python using the Flask framework.
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Contact -->
+								<section class="contact">
+									<p>Profiles</p>
+									<ul class="icons">
+										<li><a href="https://www.instagram.com/rampage_the_parrotlet/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/AidanCurley" class="icon brands fa fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.linkedin.com/in/aidan-c-2359a1203/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+									</ul>
+								</section>
+
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; <a href="https://github.com/AidanCurley">Aidan Curley</a> 2021. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
